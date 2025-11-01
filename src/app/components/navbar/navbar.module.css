@@ -1,0 +1,90 @@
+.navbar{
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  background:#FFFFFF1A;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 90%;
+  max-width: 800px;
+  transition: all 0.3s ease;
+}
+
+.navbar:hover {
+  background:#FFFFFF26;
+  transform: translateX(-50%) translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.navbarLinks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.navbarLinks a {
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbarLinks a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: width 0.3s ease;
+  border-radius: 25px;
+}
+
+.navbarLinks a:hover::before {
+  width: 100%;
+}
+
+.navbarLinks a:hover{
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.navRight{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .navbar {
+    width: 95%;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .navbarLinks {
+    gap: 1rem;
+  }
+  
+  .navbarLinks a {
+    font-size: 14px;
+    padding: 0.3rem 0.8rem;
+  }
+  
+  .navbarLinksTitle {
+    font-size: 1rem;
+  }
+}
