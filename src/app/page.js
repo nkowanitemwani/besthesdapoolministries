@@ -6,7 +6,7 @@ import Navbar from "./components/navbar";
 import CompactCard from "./components/cards/compactcard";
 import { Quote } from "lucide-react";
 import IntroVideo from "./components/introvideo";
-import MissionGrid from "./components/grids/missongrid";
+import MissionGrid from "./components/grids/misson";
 
 export default function Home() {
   return (
@@ -45,6 +45,28 @@ export default function Home() {
       <section>
         <div className={styles.missonContainer}>
          <MissionGrid></MissionGrid>
+        </div>
+      </section>
+      <section>
+        <div className={styles.heroContainer}>
+          <div className={styles.heroleft}>
+              <h2>Besthesda Pool Ministries</h2>
+              <p>lead by apostole daniel sikwese , insert text here...</p>
+          </div>
+          <div className={styles.heroRight}>
+            <Image
+            src="/images/image.png"
+            alt="test image"
+            width={300}
+            height={300}
+            className={styles.heroImage}
+            priority></Image>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className={styles.membership}>
+          //add membership grid
         </div>
       </section>
       
