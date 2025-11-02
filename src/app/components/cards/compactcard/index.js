@@ -1,8 +1,8 @@
-import styles from "./quotecard.module.css"
+import styles from "./compactcard.module.css"
 
-export default function QuoteCard({icon: Icon,title,subtitle}) {
+export default function CompactCard({icon: Icon,title,subtitle}) {
     return(
-        <div className={styles.qouteCard}>
+        <div className={styles.compactCard}>
         {Icon && (
             <div className={styles.iconWrapper}>
                 <Icon className={styles.icon} size={24} strokeWidth={1.5}></Icon>

@@ -3,9 +3,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./components/navbar";
-import QuoteCard from "./components/cards/quotecard";
+import CompactCard from "./components/cards/compactcard";
 import { Quote } from "lucide-react";
 import IntroVideo from "./components/introvideo";
+import MissionGrid from "./components/grids/missongrid";
 
 export default function Home() {
   return (
@@ -30,15 +31,20 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="">
-       <QuoteCard
+      <section >
+       <CompactCard
         icon={Quote}
         title="Quote Of The Week"
-        subtitle="insert text here"></QuoteCard>
+        subtitle="insert text here"></CompactCard>
       </section>
       <section>
         <div className={styles.videoContainer}>
           <IntroVideo></IntroVideo>
+        </div>
+      </section>
+      <section>
+        <div className={styles.missonContainer}>
+         <MissionGrid></MissionGrid>
         </div>
       </section>
       
