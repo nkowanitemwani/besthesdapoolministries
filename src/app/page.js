@@ -3,6 +3,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./components/navbar";
+import QuoteCard from "./components/cards/quotecard";
+import { Quote } from "lucide-react";
+import IntroVideo from "./components/introvideo";
 
 export default function Home() {
   return (
@@ -27,20 +30,15 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section>
-        <div className={styles.quoteOfTheWeeek}>
-          <div className={styles.iconContainer}>
-    
-          </div>
-          <div className={styles.textContainer}>
-            <h3>Quote Of The Week</h3>
-            <p>insert text here</p>
-          </div>
-        </div>
+      <section className="">
+       <QuoteCard
+        icon={Quote}
+        title="Quote Of The Week"
+        subtitle="insert text here"></QuoteCard>
       </section>
       <section>
         <div className={styles.videoContainer}>
-          
+          <IntroVideo></IntroVideo>
         </div>
       </section>
       
