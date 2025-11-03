@@ -41,3 +41,110 @@
 .heroImage:hover {
     transform: scale(1.02);
 }
+
+.locationsContainer {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 2rem;
+}
+
+
+.tableContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  overflow-x: auto;
+}
+
+.locationTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.locationTable thead {
+  background:black 
+}
+
+.locationTable thead th {
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.locationTable thead th:first-child {
+  width: 80px;
+  text-align: center;
+}
+
+.locationTable tbody tr {
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.2s ease;
+}
+
+.locationTable tbody tr:last-child {
+  border-bottom: none;
+}
+
+.locationTable tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.locationTable tbody td {
+  padding: 1.25rem 1.5rem;
+  color: #334155;
+  font-size: 1rem;
+}
+
+.locationTable tbody td:first-child {
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+
+.locationTable tbody td:nth-child(2) {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+@media (max-width: 768px) {
+  .locationsContainer h2 {
+    font-size: 1.5rem;
+  }
+
+  .locationsContainer p {
+    font-size: 1rem;
+  }
+
+  .locationTable thead th,
+  .locationTable tbody td {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .locationTable thead th:first-child {
+    width: 60px;
+  }
+}
+
+.eventsContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+
+}
+
+.upcomingEventsLeft{
+    flex: 1;
+}
+
+.calenderEventsRight{
+   flex: 1;
+}

@@ -8,6 +8,8 @@ import { Quote } from "lucide-react";
 import IntroVideo from "./components/introvideo";
 import MissionGrid from "./components/grids/misson";
 import Membership from "./components/grids/membership";
+import UpcomingEvents from "./components/grids/upcoming";
+import CalenderEvents from "./components/grids/calender";
 
 export default function Home() {
   return (
@@ -67,6 +69,56 @@ export default function Home() {
       </section>
       <section>
           <Membership></Membership>
+      </section>
+      <section>
+        <div className={styles.locationsContainer}>
+          <h2>insert text here</h2>
+          <p>insert descriptive text here</p>
+        </div>
+        <div className={styles.tableContainer}>
+          <table className={styles.locationTable}>
+            <thead>
+              <tr>
+                <th> </th>
+                <th>Name</th>
+                <th>Address</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Ship Gate Center</td>
+                <td>Kitwe West, Kitwe</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ship Gate Center</td>
+                <td>Kitwe West, Kitwe</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ship Gate Center</td>
+                <td>Kitwe West, Kitwe</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Ship Gate Center</td>
+                <td>Kitwe West, Kitwe</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <div className={styles.eventsContainer}>
+          <div className={styles.upcomingEventsLeft}>
+             <UpcomingEvents></UpcomingEvents>
+          </div>
+          <div className={styles.calenderEventsRight}>
+              <CalenderEvents></CalenderEvents>
+          </div>
+
+        </div>
       </section>
       
     </main>
