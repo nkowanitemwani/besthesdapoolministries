@@ -7,6 +7,7 @@ import CompactCard from "./components/cards/compactcard";
 import { Quote } from "lucide-react";
 import IntroVideo from "./components/introvideo";
 import MissionGrid from "./components/grids/misson";
+import Membership from "./components/grids/membership";
 
 export default function Home() {
   return (
@@ -65,9 +66,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-        <div className={styles.membership}>
-          //add membership grid
-        </div>
+          <Membership></Membership>
       </section>
       
     </main>

@@ -1,0 +1,43 @@
+.membershipGrid {
+    padding: 2rem;
+    background-color: #f8f9fb;
+}
+
+.gridHeader {
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.gridHeader h1 {
+    margin-bottom: 0.5rem;
+}
+
+.gridHeader p {
+    font-weight: 500;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.cardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media (max-width: 968px) {
+    .cardContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .cardContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}
