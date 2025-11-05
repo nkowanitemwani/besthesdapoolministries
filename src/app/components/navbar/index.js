@@ -9,16 +9,16 @@ export default function Navbar (){
     <header>
         <nav className={styles.navbar}>
             <div className={styles.navbarLinks}>
-                <Link href="">Bethesda Pool Ministries</Link>
+                <Link href="./">Bethesda Pool Ministries</Link>
             </div>
             <div className={styles.navbarLinks}>
-                <Link href="">Calender</Link>
-                <Link href="">Upcoming Events</Link>
-                <Link href="">Video Library</Link>
+                <Link href="/calender">Calender</Link>
+                <Link href="./#upcoming">Upcoming Events</Link>
+                <Link href="/videolibrary">Video Library</Link>
 
             </div>
             <div className={styles.navRight}>
-                <Button href="" style={{padding : '5px 50px'}}>Live Stream</Button>
+                <Button href="/livestream" style={{padding : '5px 50px'}}>Live Stream</Button>
             </div>
 
         </nav>

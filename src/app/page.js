@@ -109,7 +109,7 @@ export default function Home() {
           </table>
         </div>
       </section>
-      <section>
+      <section id="upcoming">
         <div className={styles.eventsContainer}>
           <div className={styles.upcomingEventsLeft}>
              <UpcomingEvents></UpcomingEvents>
