@@ -10,6 +10,7 @@ import MissionGrid from "./components/grids/misson";
 import Membership from "./components/grids/membership";
 import UpcomingEvents from "./components/grids/upcoming";
 import CalenderEvents from "./components/grids/calender";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -120,7 +121,7 @@ export default function Home() {
 
         </div>
       </section>
-      
+    <Footer></Footer>
     </main>
     </>
   );
