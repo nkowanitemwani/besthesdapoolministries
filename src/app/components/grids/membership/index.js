@@ -6,34 +6,29 @@ import { Sun } from "lucide-react";
 const members = [
     {
      icon:Sun,
-     title: "Text",
-     image: "/images/image.png"
+     title: "youth",
+     image: "/images/youth.jpg"
     },
     {
      icon:Sun,
-     title: "Text",
-     image: "/images/image.png"
+     title: "Praise and worship",
+     image: "/images/praise.jpg"
     },
     {
      icon:Sun,
-     title: "Text",
-     image: "/images/image.png"
+     title: "men",
+     image: "/images/men.jpg"
     },
     {
      icon:Sun,
-     title: "Text",
-     image: "/images/image.png"
+     title: "women",
+     image: "/images/women.jpg"
     },
     {
      icon:Sun,
-     title: "Text",
-     image: "/images/image.png"
-    },
-    {
-     icon:Sun,
-     title: "Text",
-     image: "/images/image.png"
-    }                    
+     title: "children",
+     image: "/images/children.jpg"
+    }                   
 ];
 
 export default function Membership (){
@@ -41,7 +36,7 @@ export default function Membership (){
     <div className={styles.membershipGrid}>
             <div className={styles.gridHeader}>
                 <h1>Insert Title</h1>
-                <p>Insert text here</p>
+                <p>At Bethesda Pool Ministries, we dont just want you to feel at home, we want you to be at home, because feels change. From mens and womens groups to youth, children's ministry and praise team, theres a space where you can grow,serve and belong.</p>
             </div>
         <div className={styles.cardContainer}>
             {members.map((member,index) => (

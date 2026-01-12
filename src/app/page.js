@@ -21,13 +21,13 @@ export default function Home() {
         <div className={styles.heroContainer}>
           <div className={styles.heroLeft}>
               <h1>Bethesda Pool Ministries</h1>
-              <h3>Insert text here</h3>
+              <h3>Welcome to Bethesda Pool Ministries — led by Apostle Daniel Sikwese, transforming lives through deep biblical teaching and the works of Christ.</h3>
           </div>
           <div className={styles.heroRight}>
               <Image
-                  src="/images/image.png"
+                  src="/images/church1.jpg"
                   alt="test image"
-                  width={600}
+                  width={400}
                   height={400}
                   className={styles.heroImage}
                   priority
@@ -48,7 +48,7 @@ export default function Home() {
       </section>
       <section>
         <div className={styles.missonContainer}>
-         <MissionGrid></MissionGrid>
+         {/* <MissionGrid></MissionGrid> */}
         </div>
       </section>
       <section>
@@ -59,10 +59,10 @@ export default function Home() {
           </div>
           <div className={styles.heroRight}>
             <Image
-            src="/images/image.png"
+            src="/images/pastor.jpg"
             alt="test image"
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             className={styles.heroImage}
             priority></Image>
           </div>
