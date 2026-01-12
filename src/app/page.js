@@ -39,7 +39,7 @@ export default function Home() {
        <CompactCard
         icon={Quote}
         title="Quote Of The Week"
-        subtitle="insert text here"></CompactCard>
+        subtitle="Start where you are.Use what you have. Do what you can"></CompactCard>
       </section>
       <section>
         <div className={styles.videoContainer}>
@@ -73,8 +73,8 @@ export default function Home() {
       </section>
       <section>
         <div className={styles.locationsContainer}>
-          <h2>insert text here</h2>
-          <p>insert descriptive text here</p>
+          <h2>Where to find us</h2>
+          <p>Bethesda Pool Ministries has multiple locations across zambia</p>
         </div>
         <div className={styles.tableContainer}>
           <table className={styles.locationTable}>

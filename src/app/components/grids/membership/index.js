@@ -35,7 +35,7 @@ export default function Membership (){
     return(
     <div className={styles.membershipGrid}>
             <div className={styles.gridHeader}>
-                <h1>Insert Title</h1>
+                <h1>Theres a place for you</h1>
                 <p>At Bethesda Pool Ministries, we dont just want you to feel at home, we want you to be at home, because feels change. From mens and womens groups to youth, children's ministry and praise team, theres a space where you can grow,serve and belong.</p>
             </div>
         <div className={styles.cardContainer}>
