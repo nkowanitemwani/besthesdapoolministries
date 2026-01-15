@@ -11,7 +11,7 @@ const members = [
     },
     {
      icon:Sun,
-     title: "Praise and worship",
+     title: "Praise",
      image: "/images/praise.jpg"
     },
     {

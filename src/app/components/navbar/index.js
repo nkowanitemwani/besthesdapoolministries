@@ -10,16 +10,12 @@ export default function Navbar (){
         <nav className={styles.navbar}>
             <div className={styles.navbarLinks}>
                 <Link href="./">Bethesda Pool Ministries</Link>
-            </div>
-            <div className={styles.navbarLinks}>
                 <Link href="/calender">Calender</Link>
                 <Link href="./#upcoming">Upcoming Events</Link>
                 <Link href="/videolibrary">Video Library</Link>
+            </div>
+                <Button href="/livestream" style={{padding : '5px 25px'}}>Live Stream</Button>
 
-            </div>
-            <div className={styles.navRight}>
-                <Button href="/livestream" style={{padding : '5px 50px'}}>Live Stream</Button>
-            </div>
 
         </nav>
     </header>

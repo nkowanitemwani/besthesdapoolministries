@@ -6,7 +6,6 @@ import Navbar from "./components/navbar";
 import CompactCard from "./components/cards/compactcard";
 import { Quote } from "lucide-react";
 import IntroVideo from "./components/introvideo";
-import MissionGrid from "./components/grids/misson";
 import Membership from "./components/grids/membership";
 import UpcomingEvents from "./components/grids/upcoming";
 import CalenderEvents from "./components/grids/calender";
@@ -21,7 +20,7 @@ export default function Home() {
         <div className={styles.heroContainer}>
           <div className={styles.heroLeft}>
               <h1>Bethesda Pool Ministries</h1>
-              <h3>Welcome to Bethesda Pool Ministries — led by Apostle Daniel Sikwese, transforming lives through deep biblical teaching and the works of Christ.</h3>
+              <p>Welcome to Bethesda Pool Ministries — led by Apostle Daniel Sikwese, transforming lives through deep biblical teaching and the works of Christ.</p>
           </div>
           <div className={styles.heroRight}>
               <Image
@@ -44,11 +43,6 @@ export default function Home() {
       <section>
         <div className={styles.videoContainer}>
           <IntroVideo></IntroVideo>
-        </div>
-      </section>
-      <section>
-        <div className={styles.missonContainer}>
-         {/* <MissionGrid></MissionGrid> */}
         </div>
       </section>
       <section>
@@ -76,39 +70,79 @@ export default function Home() {
           <h2>Where to find us</h2>
           <p>Bethesda Pool Ministries has multiple locations across zambia</p>
         </div>
-        <div className={styles.tableContainer}>
-          <table className={styles.locationTable}>
-            <thead>
-              <tr>
-                <th> </th>
-                <th>Name</th>
-                <th>Address</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Ship Gate Center</td>
-                <td>Kitwe West, Kitwe</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Ship Gate Center</td>
-                <td>Kitwe West, Kitwe</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Ship Gate Center</td>
-                <td>Kitwe West, Kitwe</td>
-              </tr>
-              <tr>
-                <td>1</td>
-                <td>Ship Gate Center</td>
-                <td>Kitwe West, Kitwe</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+      <div className={styles.tableContainer}>
+  <div className={styles.tableHeader}>
+  </div>
+  
+  <table className={styles.locationTable}>
+    <thead>
+      <tr>
+        <th>Location</th>
+        <th>City</th>
+        <th>Service times</th>
+        <th>Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div className={styles.locationName}>Ship Gate Center</div>
+          <div className={styles.locationDetail}>Kitwe West campus</div>
+        </td>
+        <td>Kitwe</td>
+        <td>
+          <span className={styles.serviceTime}>Sun - 07:00</span>
+          <span className={styles.serviceTimeGray}>Wed - 18:00</span>
+        </td>
+        <td>
+          <button className={styles.directionsButton}>Get directions</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div className={styles.locationName}>Ship Gate Center North</div>
+          <div className={styles.locationDetail}>Riverside campus</div>
+        </td>
+        <td>Kitwe</td>
+        <td>
+          <span className={styles.serviceTime}>Sun - 08:30</span>
+          <span className={styles.serviceTimeGray}>Thu - 18:00</span>
+        </td>
+        <td>
+          <button className={styles.directionsButton}>Get directions</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div className={styles.locationName}>Ship Gate Center Lusaka</div>
+          <div className={styles.locationDetail}>Kablonga campus</div>
+        </td>
+        <td>Lusaka</td>
+        <td>
+          <span className={styles.serviceTime}>Sun - 09:30</span>
+          <span className={styles.serviceTimeGray}>Thu - 18:00</span>
+        </td>
+        <td>
+          <button className={styles.directionsButton}>Get directions</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div className={styles.locationName}>Ship Gate Center Ndola</div>
+          <div className={styles.locationDetail}>City center campus</div>
+        </td>
+        <td>Ndola</td>
+        <td>
+          <span className={styles.serviceTime}>Sun - 10:00</span>
+          <span className={styles.serviceTimeGray}>Fri - 17:30</span>
+        </td>
+        <td>
+          <button className={styles.directionsButton}>Get directions</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
       </section>
       <section id="upcoming">
         <div className={styles.eventsContainer}>

@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./imagecard.module.css";
-import { ChevronRight } from "lucide-react";
 
 
 export default function ImageCard({title, image }) {
