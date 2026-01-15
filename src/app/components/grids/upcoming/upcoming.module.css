@@ -1,0 +1,13 @@
+.eventsSection {
+  flex: 1;
+}
+
+.sectionHeader {
+  margin-bottom: 2rem;
+}
+
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,104 @@
+.sectionHeader {
+  margin-bottom: 2rem;
+}
+
+.calendarList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.calendarCard {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  padding: 1rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  justify-content: left;
+  text-align: left;
+}
+
+.calendarCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px);
+}
+
+.dateBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: #f59e0b;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.calendarContent {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.calendarTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.calendarDescription {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .sectionHeader h2 {
+    font-size: 1.5rem;
+  }
+
+  .sectionHeader p {
+    font-size: 0.9rem;
+  }
+
+  .calendarCard {
+    padding: 1.5rem;
+  }
+
+  .calendarTitle {
+    font-size: 1.1rem;
+  }
+
+  .calendarDescription {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendarCard {
+    padding: 1.25rem;
+  }
+
+  .dateBadge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .calendarTitle {
+    font-size: 1rem;
+  }
+
+  .calendarDescription {
+    font-size: 0.8rem;
+  }
+}

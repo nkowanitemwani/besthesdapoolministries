@@ -10,6 +10,7 @@ import Membership from "./components/grids/membership";
 import UpcomingEvents from "./components/grids/upcoming";
 import CalenderEvents from "./components/grids/calender";
 import Footer from "./components/footer";
+import LocationTable from "./components/locationtable";
 
 export default function Home() {
   return (
@@ -66,83 +67,9 @@ export default function Home() {
           <Membership></Membership>
       </section>
       <section>
-        <div className={styles.locationsContainer}>
           <h2>Where to find us</h2>
           <p>Bethesda Pool Ministries has multiple locations across zambia</p>
-        </div>
-      <div className={styles.tableContainer}>
-  <div className={styles.tableHeader}>
-  </div>
-  
-  <table className={styles.locationTable}>
-    <thead>
-      <tr>
-        <th>Location</th>
-        <th>City</th>
-        <th>Service times</th>
-        <th>Contact</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <div className={styles.locationName}>Ship Gate Center</div>
-          <div className={styles.locationDetail}>Kitwe West campus</div>
-        </td>
-        <td>Kitwe</td>
-        <td>
-          <span className={styles.serviceTime}>Sun - 07:00</span>
-          <span className={styles.serviceTimeGray}>Wed - 18:00</span>
-        </td>
-        <td>
-          <button className={styles.directionsButton}>Get directions</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div className={styles.locationName}>Ship Gate Center North</div>
-          <div className={styles.locationDetail}>Riverside campus</div>
-        </td>
-        <td>Kitwe</td>
-        <td>
-          <span className={styles.serviceTime}>Sun - 08:30</span>
-          <span className={styles.serviceTimeGray}>Thu - 18:00</span>
-        </td>
-        <td>
-          <button className={styles.directionsButton}>Get directions</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div className={styles.locationName}>Ship Gate Center Lusaka</div>
-          <div className={styles.locationDetail}>Kablonga campus</div>
-        </td>
-        <td>Lusaka</td>
-        <td>
-          <span className={styles.serviceTime}>Sun - 09:30</span>
-          <span className={styles.serviceTimeGray}>Thu - 18:00</span>
-        </td>
-        <td>
-          <button className={styles.directionsButton}>Get directions</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div className={styles.locationName}>Ship Gate Center Ndola</div>
-          <div className={styles.locationDetail}>City center campus</div>
-        </td>
-        <td>Ndola</td>
-        <td>
-          <span className={styles.serviceTime}>Sun - 10:00</span>
-          <span className={styles.serviceTimeGray}>Fri - 17:30</span>
-        </td>
-        <td>
-          <button className={styles.directionsButton}>Get directions</button>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          <LocationTable></LocationTable>
       </section>
       <section id="upcoming">
         <div className={styles.eventsContainer}>
