@@ -1,0 +1,83 @@
+.calendarSection {
+  min-height: 100vh;
+  background-color: #f8f9fb;
+  padding: 4rem 2rem;
+}
+
+.calendarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendarHeader {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.calendarHeader h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1e293b;
+  margin: 0 0 0.5rem 0;
+}
+
+.calendarHeader p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.monthSection {
+  margin-bottom: 4rem;
+}
+
+.monthTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.eventsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 968px) {
+  .calendarSection {
+    padding: 3rem 1.5rem;
+  }
+
+  .calendarHeader h1 {
+    font-size: 3rem;
+  }
+
+  .calendarHeader p {
+    font-size: 1rem;
+  }
+
+  .monthTitle {
+    font-size: 1.75rem;
+  }
+
+  .eventsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .calendarSection {
+    padding: 2rem 1rem;
+  }
+
+  .calendarHeader h1 {
+    font-size: 2.5rem;
+  }
+
+  .monthTitle {
+    font-size: 1.5rem;
+  }
+}
