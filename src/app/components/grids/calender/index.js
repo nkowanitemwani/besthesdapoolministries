@@ -4,17 +4,17 @@ import styles from "./calender.module.css";
 const calendarEvents = [
   {
     date: "OCT 24",
-    title: "Fall Harvest Festival",
-    description: "A family-friendly evening of games, food, and fellowship for the whole community."
+    title: "Anniversary Conference",
+    description: "15 year anniversary conference"
   },
   {
     date: "NOV 05",
     title: "Leadership Conference",
-    description: "Equipping church leaders with tools for ministry in the modern age."
+    description: "Equipping church leaders with tools for ministry."
   },
   {
     date: "DEC 24",
-    title: "Christmas Eve Vigil",
+    title: "Christmas Eve",
     description: "Candlelight service celebrating the birth of Christ with carols and scripture."
   }
 ];

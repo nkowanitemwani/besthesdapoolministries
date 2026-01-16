@@ -17,7 +17,7 @@ export default function LocationTable(){
             <tr>
                 <td>
                 <div className={styles.locationName}>Ship Gate Center</div>
-                <div className={styles.locationDetail}>Kitwe West campus</div>
+                <div className={styles.locationDetail}>Kitwe West </div>
                 </td>
                 <td>Kitwe</td>
                 <td>
@@ -31,7 +31,7 @@ export default function LocationTable(){
             <tr>
                 <td>
                 <div className={styles.locationName}>Ship Gate Center North</div>
-                <div className={styles.locationDetail}>Riverside campus</div>
+                <div className={styles.locationDetail}>Riverside</div>
                 </td>
                 <td>Kitwe</td>
                 <td>
@@ -45,7 +45,7 @@ export default function LocationTable(){
             <tr>
                 <td>
                 <div className={styles.locationName}>Ship Gate Center Lusaka</div>
-                <div className={styles.locationDetail}>Kablonga campus</div>
+                <div className={styles.locationDetail}>Kablonga</div>
                 </td>
                 <td>Lusaka</td>
                 <td>
@@ -59,7 +59,7 @@ export default function LocationTable(){
             <tr>
                 <td>
                 <div className={styles.locationName}>Ship Gate Center Ndola</div>
-                <div className={styles.locationDetail}>City center campus</div>
+                <div className={styles.locationDetail}>City center</div>
                 </td>
                 <td>Ndola</td>
                 <td>
