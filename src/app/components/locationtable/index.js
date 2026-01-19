@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./locationtable.module.css"
+import Button from "../button";
 
 export default function LocationTable(){
     return(
@@ -25,7 +26,7 @@ export default function LocationTable(){
                 <span className={styles.serviceTimeGray}>Wed - 18:00</span>
                 </td>
                 <td>
-                <button className={styles.directionsButton}>Get directions</button>
+                <Button className={styles.directionsButton}>Get directions</Button>
                 </td>
             </tr>
             <tr>
@@ -39,7 +40,7 @@ export default function LocationTable(){
                 <span className={styles.serviceTimeGray}>Thu - 18:00</span>
                 </td>
                 <td>
-                <button className={styles.directionsButton}>Get directions</button>
+                <Button className={styles.directionsButton}>Get directions</Button>
                 </td>
             </tr>
             <tr>
@@ -53,7 +54,7 @@ export default function LocationTable(){
                 <span className={styles.serviceTimeGray}>Thu - 18:00</span>
                 </td>
                 <td>
-                <button className={styles.directionsButton}>Get directions</button>
+                <Button className={styles.directionsButton}>Get directions</Button>
                 </td>
             </tr>
             <tr>
@@ -67,7 +68,7 @@ export default function LocationTable(){
                 <span className={styles.serviceTimeGray}>Fri - 17:30</span>
                 </td>
                 <td>
-                <button className={styles.directionsButton}>Get directions</button>
+                <Button className={styles.directionsButton}>Get directions</Button>
                 </td>
             </tr>
             </tbody>
