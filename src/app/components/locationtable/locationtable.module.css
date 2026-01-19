@@ -140,6 +140,7 @@
 
 .directionsButton:hover {
   color: #3b82f6;
+  text-decoration: none;
 }
 
 @media (max-width: 768px) {

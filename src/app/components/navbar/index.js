@@ -14,7 +14,7 @@ export default function Navbar (){
                 <Link href="./#upcoming">Upcoming Events</Link>
                 <Link href="/videolibrary">Video Library</Link>
             </div>
-                <Button href="/livestream" style={{padding : '5px 25px'}}>Live Stream</Button>
+                <Button href="/livestream">Live Stream</Button>
 
 
         </nav>

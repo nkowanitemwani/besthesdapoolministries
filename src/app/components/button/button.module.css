@@ -1,7 +1,7 @@
 .hplcCta {
   background: var(--color-primary);
   color: var(--color-white);
-  padding: 0.75rem 1.5rem;
+    padding: 0.35rem 0.75rem;
   border-radius: 10px;
   font-size: 18px;
   font-weight: 500;
@@ -9,7 +9,7 @@
   text-align: center;
   border: none;
   transition: all 0.3s ease;
-  min-height: 44px; /* Touch-friendly minimum */
+  min-height: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
