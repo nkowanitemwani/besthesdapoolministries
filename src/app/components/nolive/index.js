@@ -9,10 +9,14 @@ export default function NoLive(){
             <h1>Live Stream Unavaliable</h1>
             <span>Browse through our <Link href="/videolibrary">Video Library</Link> instead</span>
             <Image 
-            src="/images/nolive.png"
+            src="/images/nolive.webp"
             alt="no live stream image"
             width={400}
-            height={300}></Image>
+            height={300}
+            className={styles.noLiveImage}
+            style={{width: '100%',maxWidth:'400px',height:'auto'}}
+            quality={70}>    
+            </Image>
         </section>
     );
 }

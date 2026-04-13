@@ -1,12 +1,12 @@
 .footerInfo {
   display: flex;
-  gap: 5rem; /* Increased from 2rem for better spacing */
+  gap: 5rem; 
   padding: 50px;
-  justify-content: center; /* Changed from space-between */
+  justify-content: center; 
   align-items: flex-start;
-  /* flex-wrap: wrap; */
-  max-width: 1400px; /* Add max-width to prevent excessive spreading */
-  margin: 0 auto; /* Center the footer */
+  flex-wrap: wrap;
+  max-width: 1400px; 
+  margin: 0 auto; 
 }
 
 .footerInfo h3 {
@@ -65,3 +65,27 @@
   gap: 0.5rem;
 }
 
+@media screen and (max-width: 768px) {
+  .footerInfo {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .footerInfoLeft,
+  .footerInfoCenter {
+    flex: unset;
+    min-width: unset;
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footerInfo {
+    padding: 24px 16px;
+    gap: 1.5rem;
+  }
+}

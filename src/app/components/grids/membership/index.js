@@ -7,27 +7,27 @@ const members = [
     {
      icon:Sun,
      title: "youth",
-     image: "/images/youth.jpg"
+     image: "/images/youth.webp"
     },
     {
      icon:Sun,
      title: "Praise",
-     image: "/images/praise.jpg"
+     image: "/images/praise.webp"
     },
     {
      icon:Sun,
      title: "men",
-     image: "/images/men.jpg"
+     image: "/images/men.webp"
     },
     {
      icon:Sun,
      title: "women",
-     image: "/images/women.jpg"
+     image: "/images/women.webp"
     },
     {
      icon:Sun,
      title: "children",
-     image: "/images/children.jpg"
+     image: "/images/children.webp"
     }                   
 ];
 

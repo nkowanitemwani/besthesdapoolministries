@@ -11,10 +11,11 @@ export default function VideoLibrary() {
             <section>
                 <h1>Bethesda pool Video Library</h1>
                 <Image
-                src="/images/comingsoon.png"
+                src="/images/comingsoon.webp"
                 alt="video library coming soon"
                 width={400}
-                height={300}></Image>
+                height={300}
+                quality={70}></Image>
             </section>
             <Footer></Footer>
         </main>

@@ -2,6 +2,9 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling:touch;
 }
 
 .locationTable {
@@ -13,6 +16,7 @@
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   border: 1px solid #e2e8f0;
+  min-width: 560px;
 }
 
 .locationTable thead {
@@ -94,4 +98,17 @@
 .directionsButton:hover {
   color: #3b82f6;
   text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .tableContainer {
+    padding: 0 0.5rem;
+  }
+
+  .locationTable thead th,
+  .locationTable tbody td {
+    padding: 0.875rem 1rem;
+    font-size: 0.875rem;
+  }
 }
