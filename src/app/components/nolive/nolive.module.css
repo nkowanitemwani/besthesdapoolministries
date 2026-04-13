@@ -1,3 +1,14 @@
 .nostreamcontainer a {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Add these: */
+.nostreamcontainer {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.noLiveImage {
+  max-width: 100%;
+  height: auto;
 }

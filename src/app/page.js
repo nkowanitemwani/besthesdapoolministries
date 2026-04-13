@@ -25,11 +25,12 @@ export default function Home() {
           </div>
           <div className={styles.heroRight}>
               <Image
-                  src="/images/church1.jpg"
+                  src="/images/church1.webp"
                   alt="test image"
                   width={400}
                   height={400}
                   className={styles.heroImage}
+                  style={{width:'100%',height:'aut0'}}
                   priority
                   ></Image>
           </div>
@@ -54,12 +55,14 @@ export default function Home() {
           </div>
           <div className={styles.heroRight}>
             <Image
-            src="/images/pastor.jpg"
+            src="/images/pastor.webp"
             alt="test image"
             width={400}
             height={400}
             className={styles.heroImage}
-            priority></Image>
+            style={{width:'100%',height:'aut0'}}
+            quality={70}
+            ></Image>
           </div>
         </div>
       </section>
